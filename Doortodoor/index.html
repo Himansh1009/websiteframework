@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Information Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <form>
+    <label for="profile-picture">Profile Picture:</label>
+    <input type="file" id="profile-picture">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Full Name">
+
+    <label for="contact-no">Contact No.:</label>
+    <input type="tel" id="contact-no" placeholder="+977-xxxxxxxxx">
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" placeholder="where and nearby">
+
+    <label for="professions">Profession:</label>
+    <div id="professions"><ul>
+      
+      <label for="Plumber"><input type="checkbox" id="Plumber" />Plumber</label></li>
+
+      
+      <label for="Carpenter"><input type="checkbox" id="Carpenter">Carpenter</label>
+
+      
+      <label for="Electrician"><input type="checkbox" id="Electrician">Electrician</label>
+
+      
+      <label for="other"><input type="checkbox" id="other">Other</label>
+
+      <input type="text" id="other-profession-input" placeholder="Specify other profession">
+    </ul></div>
+    <div class="bt">
+        <input type="submit" value="Submit" id="submit-button">
+    </div>
+  </form>
+
+  <script>
+    const otherCheckbox = document.getElementById('other');
+    const otherProfessionInput = document.getElementById('other-profession-input');
+
+    otherCheckbox.addEventListener('change', () => {
+      if (otherCheckbox.checked) {
+        otherProfessionInput.style.display = 'block';
+      } else {
+        otherProfessionInput.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

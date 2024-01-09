@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+body {
+    font-family: Salsa;
+    background-color:   #c1c1c1;
+    margin: 80px;
+    margin-top: 300px;
+    margin-bottom: 100px;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+
+  form {
+    width: 50%;
+    flex-direction: column;
+    text-align: left;
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    padding: 20px;
+    background-color:  #3498db;
+    font-family: Salsa;
+  }
+
+  label {
+  display: flex;
+  margin-bottom: 10px;
+  }
+
+  input[type=text], input[type=tel] {
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+    padding-right: 0%;
+    align-self: center;
+  }
+
+  input[type=file] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  #professions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #professions input[type=checkbox] {
+    margin-right: 5px;
+  }
+
+  #other-profession-input {
+    display: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .bt {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+  }
+  #submit-button {
+    width: 50%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: 2px;
+    transition: 0.5sec;
+    cursor: pointer;
+    align-self: center;
+    margin: 0 auto;
+  }
+  #submit-button:hover{
+    background-color: green;
+    transition: 0.3s;
+  }
+  /* Media query for smaller screens */
+@media (max-width: 768px) {
+    form {
+      width: 80%; /* Adjusted width for smaller screens */
+    }
+}
