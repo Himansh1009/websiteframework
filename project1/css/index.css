@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(44, 42, 42, 0.75),rgba(0,0,0,0.75)),
+    url(/project1/image/istockphoto-1449646614-1024x1024.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    color: beige;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Salsa;
+}
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #009988;
+    position: absolute;    
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content-row{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+
+}
+.right-col .left-col{
+
+    flex-basis: 50%;
+
+}
+.left-col{
+    padding: 50px 0;
+    color: aliceblue;
+}
+
+.search{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 2px solid #fff;
+
+}
+.search img{
+    height: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+
+
+}
+.search input{
+    width: 100%;
+    outline: none;
+    border: o;
+    background-color: transparent;
+    font-size: 14px;
+    color: #fff;    
+}
+
+hr{
+    width: 190px;
+    height: 3px;
+    margin: 30px 0;
+    background-color: red;
+}
+h1{
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: Salsa;
+    font-weight: bold;
+
+}
+p{
+    color: beige;
+    margin: 30px 0;
+    font-size: 14px;
+    line-height: 22px;  
+}
+.indicator{
+    display: flex;
+
+}
+span{
+    width: 15px;
+    height: 15px; 
+    border:2px solid beige;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.active{
+    background-color: aqua;
+}
+.right-col img{
+    width: 100%;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    
+}
+.content h1{
+    color: azure;
+    font-family: Salsy;
+    font-size: 70px;
+
+}
+.content p{
+    line-height: 25px;
+    margin: 20px;
+    font-family: Salsa;
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+.myButton{
+    background-color: transparent; /* Initial transparent background */
+      /* color: bisque; Text color */
+      /* padding: 15px 0px; Adjust padding as needed */
+      /* border: 2px solid #2F3842; 2px black border */
+      /* cursor: pointer; Change cursor to pointer on hover */
+      /* transition: background-color 0.5s; Add transition for smooth effect */
+      /* border-radius: 25px;
+      width: 200px;
+      text-align: center;
+      margin: 20px 10px;
+      font-weight: bold;
+      border: 2px solid #2f3842;
+      position: relative;
+      overflow: hidden;
+      font-family: Salsa;
+      text-transform: uppercase; */
+
+/* } */
+/* .myButton:hover { */
+    /* background-color: #2F3842; Change background color on hover */
+  /* } */ 
